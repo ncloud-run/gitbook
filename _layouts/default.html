@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/page.css?v=' | append: site.github.build_revision | relative_url }}">
+</head>
+<body>
+<div class="header">
+    <div class="header-title">{{ site.title }}</div>
+    <div class="header-nav">
+        {% capture header_links_include %}{% include HEADER_LINKS.md %}{% endcapture %}
+        {{ header_links_include | markdownify }}
+    </div>
+</div>
+<div class="main">
+    <div class="sidebar">
+        <div class="sidebar-content">
+        {% capture summary_include %}{% include SUMMARY.md %}{% endcapture %}
+        {{ summary_include | markdownify }}
+        </div>
+    </div>
+    <section>
+        <div class="content">
+            <div class="markdown-body">{{ content }}</div>
+        </div>
+    </section>
+</div>
+</body>
+</html>
