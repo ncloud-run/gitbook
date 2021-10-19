@@ -1,2 +1,7 @@
 title: 改为你的网站标题
 theme: minima
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled:     true
+  collections: false
