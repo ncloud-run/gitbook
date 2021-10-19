@@ -90,8 +90,9 @@
     display: none;
 }
 .content {
-
+    flex-grow: 1;
     margin-left: 80px;
+    margin-right: 80px;
     padding-bottom: 40px;
 }
 .main {
@@ -105,4 +106,32 @@
 }
 .markdown-body a {
     color:var(--main-color);
+}
+@media only screen and (max-width: 64em) {
+    .main {
+        display: block;
+    }
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid var(--main-border-color);
+        display: block;
+    }
+    .header-title {
+        width:auto;
+        text-align: center;
+        display: block;
+        border: none;
+    }
+    .header-nav {
+        text-align: center;
+        display: block;
+    }
+    .header-nav a {
+        display: inline;
+    }
+    .content {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }

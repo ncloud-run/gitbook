@@ -4,7 +4,6 @@ title: 守护进程
 ---
 
 # 2type/gitbook
-
 开启 Github Pages 后 新建 `_config.yml` 文件
 内容为
 
