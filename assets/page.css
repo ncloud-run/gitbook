@@ -45,6 +45,7 @@
     background-color: var(--main-siderbar-background-color);
     width:300px;
     min-width:300px;
+    min-height: calc(100vh - 92px);
     padding-left: 24px;
     box-sizing: border-box;
     border-right: 1px solid var(--main-border-color);
@@ -116,6 +117,7 @@
         border-right: none;
         border-bottom: 1px solid var(--main-border-color);
         display: block;
+        min-height: 1%;
     }
     .header-title {
         width:auto;
