@@ -3,6 +3,8 @@ layout: default
 title: 守护进程
 ---
 
+* [关于](./about.md)
+
 # 2type/gitbook
 开启 Github Pages 后 新建 `_config.yml` 文件
 内容为
