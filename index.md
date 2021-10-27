@@ -27,8 +27,8 @@ remote_theme: 2type/gitbook
 
 ## 定义页面内容
 
-* 修改左侧导航 `./_includes/SUMMARY.md`
-* 修改头部导航 `./_includes/HEADER_LINKS.md
+* 修改左侧导航 `./SUMMARY.html`
+* 修改头部导航 `./HEADER_LINKS.html`
 
 ## 关于
 
