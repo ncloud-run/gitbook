@@ -5,8 +5,9 @@ title: 2type/gitbook
 
 # 2type/gitbook
 开启 Github Pages 后 新建 `_config.yml` 文件
+
 内容为
-[1](./about.md)
+
 ```yaml
 title: 你的网站标题
 remote_theme: 2type/gitbook
@@ -33,7 +34,7 @@ remote_theme: 2type/gitbook
 
 ## 样式
 
-新建 `assets/var.css`文件,内容为
+> 新建 `assets/var.css`文件,内容为
 
 ```css
 :root{
@@ -42,5 +43,3 @@ remote_theme: 2type/gitbook
     --main-siderbar-background-color: rgba(243,245,246,1.00);
 }
 ```
-
-你可以修改这些变量
