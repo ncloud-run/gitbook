@@ -29,7 +29,18 @@ remote_theme: 2type/gitbook
 
 * 修改左侧导航 `./_includes/SUMMARY.html`
 * 修改头部导航 `./_includes/HEADER_LINKS.html`
+* 修改底部 `./_includes/FOOTER.html`
 
-## 关于
+## 样式
 
-[about.md](./about.md)
+新建 `assets/var.css`文件,内容为
+
+```css
+:root{
+    --main-color: rgba(38,203,124,1.00);
+    --main-border-color:#d3dce4;
+    --main-siderbar-background-color: rgba(243,245,246,1.00);
+}
+```
+
+你可以修改这些变量

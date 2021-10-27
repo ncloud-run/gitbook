@@ -1,5 +1,5 @@
 :root{
     --main-color: rgba(38,203,124,1.00);
---main-border-color:#d3dce4;
---main-siderbar-background-color: rgba(243,245,246,1.00);
+    --main-border-color:#d3dce4;
+    --main-siderbar-background-color: rgba(243,245,246,1.00);
 }
