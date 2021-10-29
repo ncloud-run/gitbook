@@ -43,10 +43,24 @@ gem 'github-pages', group: :jekyll_plugins
 
 有些平台必须通过 `/practice/friends.html` 才能访问页面,而不能通过 `/practice/friends/`
 
-比如 `https://vercel.com/` 的平台需要在每个markdown文件都配置`permalink`
+### vercel
+
+在 `https://vercel.com/` 需要在每个markdown文件都配置`permalink`
 
 ```
 ---
 permalink: /practice/friends/
 ---
 ```
+
+在 `https://vercel.com/用户名/项目/settings` 页面中将
+
+`Build & Development Settings` 栏目打开 OVERRIDE
+将 `BUILD COMMAND设置为` 设置为
+`bundle exec jekyll build` 
+
+
+
+## TODO
+
+1. [ ] 扫描页面导航在文章底部加载下一个文章和上一个文章

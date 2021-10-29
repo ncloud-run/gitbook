@@ -4,31 +4,30 @@
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <link rel="stylesheet" href="{{ '/assets/markdown/gitbook-azure.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/var.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/page.css?v=' | append: site.github.build_revision | relative_url }}">
 </head>
 <body>
 <div class="app">
+    <a href="#" id="nav"  class="nav-hash"></a>
     <div class="header">
         <div class="header-title">{{ site.title }}</div>
         <div class="header-nav">
             {% include HEADER_LINKS.html %}
         </div>
     </div>
-    <div class="main">
-        <div class="nav">
-            <div class="nav-content">
-                <a href="#" id="nav"  class="nav-hash"></a>
-                {% include SUMMARY.html %}
-            </div>
+    <div class="nav">
+        <div class="nav-content">
+            {% include SUMMARY.html %}
         </div>
-        <div class="content">
-            <div class="markdown-body">
-                {{ content }}
-            </div>
-            <div class="footer">
-                {% include FOOTER.html %}
-            </div>
+    </div>
+    <div class="content">
+        <div class="markdown-body">
+            {{ content }}
+        </div>
+        <div class="footer">
+            {% include FOOTER.html %}
         </div>
     </div>
     <a href="#nav" class="nav-hash-link">📖</a>
