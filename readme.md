@@ -16,6 +16,9 @@ remote_theme: 2type/gitbook
 
 新建 markdown 文件
 
+    ---
+    permalink: /some/
+    ---
     # 标题
     
     内容**加粗**
