@@ -1,6 +1,7 @@
 ---
 layout: default 
 title: 2type/gitbook
+permalink: /
 ---
 
 # 2type/gitbook
