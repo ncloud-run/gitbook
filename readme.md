@@ -4,6 +4,12 @@ title: 2type/gitbook
 ---
 
 # 2type/gitbook
+
+> gitbook 在国内总挂所以我做了一个 jekyll 版 gitbook主题,可以自行部署静态资源在各大平台
+
+
+![](./demo.jpg)
+
 开启 Github Pages 后 新建 `_config.yml` 文件
 
 内容为
