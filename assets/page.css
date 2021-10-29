@@ -144,12 +144,27 @@ html,body {
 .footer {
 
 }
+.sidebar-hash-link {
+    display: none;
+}
+.sidebar-hash-link {
+    position: absolute;
+    top:1em;right:1em;
+    display: none;
+    font-size: 1.5em;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 64em) {
+    .sidebar-hash-link {
+        display: block;
+    }
     .app {
-        padding-top: 95px;
+        padding: 0;
     }
     .header {
-        position: fixed;
+        position: sticky;
         top:0;left:0;
     }
     .markdown-body {
@@ -165,6 +180,7 @@ html,body {
         border-bottom: 1px solid var(--main-border-color);
         display: block;
         min-height: 1%;
+        max-height: calc(50vh);
     }
     .header-title {
         width:auto;
