@@ -181,6 +181,7 @@ html body .nav-hash {
     padding-bottom: .5em;
 }
 .nav-switch-menu {
+    opacity: .8;
     color: var(--main-color);
     width:1.5em;
     vertical-align: middle;
