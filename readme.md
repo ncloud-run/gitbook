@@ -28,11 +28,23 @@ remote_theme: 2type/gitbook
     ---
     permalink: /some/
     ---
-    # 标题
+    # 标题 
     
     内容**加粗**
+    ## 章节1 <a id="hash_name"></a>
+    abc
 
+### permalink
+在 markdown 顶部配置 permalink 可自定义 URL 
+```
+---
+permalink: /some/
+---
+```
 
+### 锚点
+ 
+> `## 章节1 <a id="hash_name"></a>` 在标题后面加带 id 的空 a 标签,可以实现自定义锚点   
 
 ## 定义页面内容
 
@@ -44,7 +56,7 @@ remote_theme: 2type/gitbook
 
 修改 [./assets/var.css](./assets/var.css) 文件
 
-## 部署jekyll
+## 部署jekyll  <a id="publish_jeykyll"></a>
 
 根目录新建 `Gemfile` 文件
 

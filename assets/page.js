@@ -9,11 +9,24 @@
             .replace(/\/$/,'')
             .replace(/\.html$/, '')
             .replace(/\README$/, '')
+
         if (path == href) {
             node.classList.add("nav-link--on")
-            node.focus()
+            // node.focus()
         }
         console.log("made with https://github.com/2type/gitbook")
+    })
+    var headerLinks = [
+        document.querySelectorAll(".markdown-body h2 a"),
+        document.querySelectorAll(".markdown-body h3 a"),
+        document.querySelectorAll(".markdown-body h4 a"),
+        document.querySelectorAll(".markdown-body h5 a"),
+        document.querySelectorAll(".markdown-body h6 a"),
+    ]
+    headerLinks.forEach(function (item) {
+        item.forEach(function (node) {
+            node.href = "#" + node.id
+        })
     })
 
     document
