@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <link rel="stylesheet" href="{{ '/assets/fontawesome/css/font-awesome.min.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/markdown/gitbook-azure.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/var.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/page.css?v=' | append: site.github.build_revision | relative_url }}">
@@ -18,7 +19,7 @@
     </div>
     <div class="nav" id="nav">
         <div class="nav-switch" id="nav-switch">
-            <img class="nav-switch-menu" src="{{ '/assets/menu.svg?v=' | append: site.github.build_revision | relative_url }}" alt="">
+            <i class="nav-switch-menu fa fa-list"></i>
         </div>
         <div class="nav-content">
             {% include SUMMARY.html %}
