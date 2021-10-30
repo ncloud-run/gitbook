@@ -223,9 +223,13 @@ html body .nav-hash {
     .header {
         position: static;
     }
-    .markdown-body {
-        padding-left: 1em;
-        padding-right: 1em;
+    .markdown-body h2 a,
+    .markdown-body h3 a,
+    .markdown-body h4 a,
+    .markdown-body h5 a,
+    .markdown-body h6 a {
+        margin-left: 0;
+        padding-right: 0;
     }
     .nav {
         width: 100%;
@@ -236,8 +240,8 @@ html body .nav-hash {
         /*max-height: calc(70vh);*/
     }
     .markdown-body {
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     .nav-switch {
         cursor: pointer;
