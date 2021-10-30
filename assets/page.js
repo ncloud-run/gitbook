@@ -47,4 +47,13 @@
             document.getElementById("nav").classList.remove("nav-switch-status--hide")
         }
     }
+    // 延迟平滑,避免刚打开页面带hash时候出现滚动
+    setTimeout(function () {
+        var style = document.createElement('style')
+        css = `* {
+            scroll-behavior:smooth;
+        }`
+        style.appendChild(document.createTextNode(css))
+        document.head.appendChild(style)
+    }, 2000)
 })();
