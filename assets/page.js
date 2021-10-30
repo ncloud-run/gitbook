@@ -1,5 +1,5 @@
 (function () {
-    document.querySelectorAll('.sidebar a').forEach(function (node) {
+    document.querySelectorAll('#nav a').forEach(function (node) {
         var path = location.pathname
             .replace(/\/$/,'')
             .replace(/\.html$/, '')
