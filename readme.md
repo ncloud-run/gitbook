@@ -1,11 +1,12 @@
 ---
 layout: default 
 title: 2type/gitbook
+permalink: /
 ---
 
 # 2type/gitbook
 
-> gitbook 在国内总挂所以我做了一个 jekyll 版 gitbook主题,可以自行部署静态资源在各大平台
+> gitbook 在国内访问速度慢,而且经常打开白屏,所以我做了一个 jekyll 版 gitbook主题,可以自行部署静态资源在各大平台.
 
 示例项目 [https://be.nimo.run](https://be.nimo.run)
 
@@ -71,6 +72,16 @@ permalink: /practice/friends/
 `bundle exec jekyll build` 
 
 
+## 本地开发
+
+https://jekyllrb.com/docs/
+
+```
+# 监听文件修改更新页面
+bundle exec jekyll serve
+# 构建静态文件
+bundle exec jekyll build
+```
 
 ## TODO
 

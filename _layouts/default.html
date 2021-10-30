@@ -10,18 +10,18 @@
 </head>
 <body>
 <div class="app">
-    <a href="#" id="nav"  class="nav-hash"></a>
     <div class="header">
         <div class="header-title">{{ site.title }}</div>
         <div class="header-nav">
             {% include HEADER_LINKS.html %}
         </div>
     </div>
-    <div class="nav">
+    <div class="nav" id="nav">
         <div class="nav-content">
             {% include SUMMARY.html %}
         </div>
     </div>
+    <div class="nav-switch" id="nav-switch">SUMMARY</div>
     <div class="content">
         <div class="markdown-body">
             {{ content }}
@@ -30,7 +30,6 @@
             {% include FOOTER.html %}
         </div>
     </div>
-    <a href="#nav" class="nav-hash-link">📖</a>
 </div>
 <script src="{{ '/assets/page.js?v=' | append: site.github.build_revision | relative_url }}" ></script>
 </body>
