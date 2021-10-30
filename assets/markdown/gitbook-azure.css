@@ -341,6 +341,7 @@ mark {
 /*BLOCKQUOTE*/
 
 blockquote {
+    box-sizing: border-box;
     width: 100%;
     background-color: var(--boxes);
     border-left: 4px solid var(--primary-color);

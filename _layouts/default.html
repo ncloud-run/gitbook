@@ -17,11 +17,13 @@
         </div>
     </div>
     <div class="nav" id="nav">
+        <div class="nav-switch" id="nav-switch">
+            <img class="nav-switch-menu" src="{{ '/assets/menu.svg?v=' | append: site.github.build_revision | relative_url }}" alt="">
+        </div>
         <div class="nav-content">
             {% include SUMMARY.html %}
         </div>
     </div>
-    <div class="nav-switch" id="nav-switch">SUMMARY</div>
     <div class="content">
         <div class="markdown-body">
             {{ content }}

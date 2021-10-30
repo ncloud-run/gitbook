@@ -32,19 +32,13 @@
     document
         .getElementById("nav-switch")
         .addEventListener("click", function () {
-            if (localStorage.getItem("nav-switch-status--hide")) {
-                localStorage.removeItem("nav-switch-status--hide")
-            } else {
-                localStorage.setItem("nav-switch-status--hide", "1")
-            }
             switchNav()
     })
-    switchNav()
     function switchNav() {
-        if (localStorage.getItem("nav-switch-status--hide")) {
-            document.getElementById("nav").classList.add("nav-switch-status--hide")
+        if (document.getElementById("nav").classList.contains("nav-switch-status--show")) {
+            document.getElementById("nav").classList.remove("nav-switch-status--show")
         } else {
-            document.getElementById("nav").classList.remove("nav-switch-status--hide")
+            document.getElementById("nav").classList.add("nav-switch-status--show")
         }
     }
     // 延迟平滑,避免刚打开页面带hash时候出现滚动
