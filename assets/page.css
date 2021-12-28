@@ -133,6 +133,9 @@ html body .nav-hash {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+.nav-content>ul ul{
+    padding-left: 1em;
+}
 .nav h2 {
     font: 12px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     font-weight: bold;
@@ -316,3 +319,20 @@ div.highlight::before {
     width: 12px;
     left:10px;
  }
+
+@media only screen and (max-width: 64em){
+    .embed-code {
+        display: none;
+    }
+
+    .main-content{
+        margin-left: 0;
+    }
+    .markdown-header {
+        width: 100%;
+        position: relative;
+        top:0;left:0;
+        display: block;
+        float: none;
+    }
+}
