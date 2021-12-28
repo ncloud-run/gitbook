@@ -42,6 +42,12 @@ permalink: /some/
 ---
 ```
 
+## 定义页面内容
+
+* 修改左侧导航 [./_includes/SUMMARY.html](./_includes/SUMMARY.html?blob)
+* 修改头部导航 [./_includes/HEADER_LINKS.html](./_includes/HEADER_LINKS.html?blob)
+* 修改底部 [./_includes/FOOTER.html](./_includes/FOOTER.html?blob)
+
 ## 基于内容生成侧栏
 
 在 markdown 文件顶部配置 `sidebarBasedOnContent: true` 
@@ -84,12 +90,6 @@ sidebarBasedOnContent: true
 ## 章节1 <a id="hash_name"></a>
 ```
 在标题后面加带 id 的空 a 标签,可以实现自定义锚点   
-
-## 定义页面内容
-
-* 修改左侧导航 [./_includes/SUMMARY.html](./_includes/SUMMARY.html?blob)
-* 修改头部导航 [./_includes/HEADER_LINKS.html](./_includes/HEADER_LINKS.html?blob)
-* 修改底部 [./_includes/FOOTER.html](./_includes/FOOTER.html?blob)
 
 ## 样式
 
