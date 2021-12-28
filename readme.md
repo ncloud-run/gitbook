@@ -93,7 +93,7 @@ sidebarBasedOnContent: true
 
 ## 样式
 
-修改 [./assets/var.css](./assets/var.css?blob) 文件
+修改 [./assets/var.css](./assets/var.css?embed) 文件可自定义主题颜色
 
 ## 部署jekyll  <a id="publish_jeykyll"></a>
 

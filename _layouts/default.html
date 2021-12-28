@@ -24,6 +24,14 @@
         <div class="nav-content">
             {% include SUMMARY.html %}
         </div>
+        <div class="nav-copyright">
+            <div class="nav-copyright-item">
+                <a href="{{ site.github.repository_url }}" target="_blank">
+                    <span class="fa fa-github nav-copyright-icon"></span>
+                    {{ site.github.repository_nwo }}
+                </a>
+            </div>
+        </div>
     </div>
     <div class="content">
         <div class="markdown-body">
@@ -39,7 +47,7 @@
 <script src="https://unpkg.nimo.run/@highlightjs/cdn-assets@11.1.0/highlight.min.js"></script>
 <script>
     window.GithubRepoURL = ""
-    window.GithubRepoURL = "{{ site.github.repository_url }}"
+        window.GithubRepoURL = "{{ site.github.repository_url }}"
     window.GithubRepoNwo = ""
     window.GithubRepoNwo = "{{ site.github.repository_nwo }}"
     window.GithubBranch  = "main"

@@ -336,3 +336,18 @@ div.highlight::before {
         float: none;
     }
 }
+.nav-copyright {
+    text-align: center;
+    padding: 1em;
+}
+.nav-copyright a {
+    color: rgba(92,105,117,1.00);
+}
+.nav-copyright-icon {
+
+}
+.nav-copyright-item {
+    padding:.5em 1em;
+    background-color: rgba(236,239,241,1.00);
+    border-radius: .5em;
+}
