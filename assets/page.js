@@ -94,6 +94,23 @@
         })
     })
 
+    var headers = [
+        document.querySelectorAll(".markdown-body h2"),
+        document.querySelectorAll(".markdown-body h3"),
+        document.querySelectorAll(".markdown-body h4"),
+        document.querySelectorAll(".markdown-body h5"),
+        document.querySelectorAll(".markdown-body h6"),
+    ]
+    headers.forEach(function (item) {
+        item.forEach(function (node) {
+            var hash = node.querySelector('a')
+            if (!hash) {
+                var hashNode = document.createElement('a')
+                hashNode.href = "#"+ node.id
+                node.appendChild(hashNode)
+            }
+        })
+    })
     document
         .getElementById("nav-switch")
         .addEventListener("click", function () {
@@ -128,6 +145,7 @@ function getBlobURL(href) {
         dirPath = PagePath.replace(/\/[^/]*$/, "/")
     }
     var onlineHref = GithubRepoURL + "/blob/" + GithubBranch  + "/"+ dirPath + sourcePath
+    onlineHref = onlineHref.replace(/\?$/, "")
     return onlineHref
 }
 function getRawURL(href) {
@@ -139,6 +157,7 @@ function getRawURL(href) {
         dirPath = PagePath.replace(/\/[^/]*$/, "/")
     }
     var onlineHref = "https://raw.githubusercontent.com/" + GithubRepoNwo + "/" +GithubBranch  + "/"+ dirPath + sourcePath
+    onlineHref = onlineHref.replace(/\?$/, "")
     return onlineHref
 }
 var onload = function (){
@@ -147,12 +166,13 @@ var onload = function (){
         var navContent = document.querySelector("#nav .nav-content")
         navContent.innerHTML = ""
         var markrunSideData = markrunSidebar({
-            content: document.querySelector(".content .markdown-body"),
+            content: document.querySelector("#markdown-body"),
             element: navContent
         })
     }
     // ?blob ?embed
-    document.querySelectorAll('a').forEach(function (node) {
+    var links = document.querySelectorAll('a')
+    links.forEach(function (node) {
         var blobReg = /\?blob/g
         if (blobReg.test(node.href)) {
             node.setAttribute('target', "_blank")
@@ -198,9 +218,9 @@ var onload = function (){
                 sourceLink.prepend(githubIcon)
                 box.appendChild(sourceLink)
                 box.appendChild(pre)
-
-                node.parentNode.replaceChild(box,node)
-
+                if (node.parentNode) {
+                    node.parentNode.replaceChild(box,node)
+                }
             })
         }
     })
