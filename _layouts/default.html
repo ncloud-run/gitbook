@@ -49,7 +49,7 @@
     window.GithubRepoURL = ""
         window.GithubRepoURL = "{{ site.github.repository_url }}"
     window.GithubRepoNwo = ""
-    window.GithubRepoNwo = "{{ site.github.repository_nwo }}"
+    window.GithubRepoNwo = GithubRepoURL.replace("https://github.com/", "")
     window.GithubBranch  = "main"
     window.GithubBranch = "{{ site.github.source.branch }}"
     window.PageSidebarBasedOnContent = !!"{{page.sidebarBasedOnContent}}"
