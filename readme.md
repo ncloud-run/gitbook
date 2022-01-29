@@ -122,6 +122,11 @@ permalink: /practice/friends/
 将 `BUILD COMMAND设置为` 设置为
 `bundle exec jekyll build` 
 
+在 `https://vercel.com/用户名/项目/settings/environment-variables` 页面中
+
+添加 
+NAME: `VERCEL_GIT_REPO_OWNER`
+VALUE: `用户名/项目` 例如 `nimoc/be`
 
 ## 本地开发
 
