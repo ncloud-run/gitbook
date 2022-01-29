@@ -28,7 +28,7 @@
             <div class="nav-copyright-item">
                 <a href="{{ site.github.repository_url }}" target="_blank">
                     <span class="fa fa-github nav-copyright-icon"></span>
-                    {{ site.github.repository_nwo }}
+                    <span id ="repository_nwo"></span>
                 </a>
             </div>
         </div>
@@ -50,6 +50,7 @@
         window.GithubRepoURL = "{{ site.github.repository_url }}"
     window.GithubRepoNwo = ""
     window.GithubRepoNwo = GithubRepoURL.replace("https://github.com/", "")
+    document.getElementById("repository_nwo").innerText = GithubRepoNwo
     window.GithubBranch  = "main"
     window.GithubBranch = "{{ site.github.source.branch }}"
     window.PageSidebarBasedOnContent = !!"{{page.sidebarBasedOnContent}}"
