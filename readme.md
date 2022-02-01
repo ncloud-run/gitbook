@@ -97,6 +97,16 @@ sidebarBasedOnContent: true
 
 随后创建的 `_config.yaml` 只需设置为 `remote_theme: 用户名或组织名/gitbook`
 
+## 继承
+
+你可以 fork 本项目后修改 `_includes` 文件下的文件.然后再你的新项目的新建 `_config.yaml`
+
+```yaml
+remote_theme: 你的用户名或组织名/gitbook
+```
+
+这样就可以统一管理公用部分了
+
 ## 部署jekyll  <a id="publish_jeykyll"></a>
 
 根目录新建 `Gemfile` 文件
