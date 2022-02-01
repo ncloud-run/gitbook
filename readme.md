@@ -23,10 +23,10 @@ remote_theme: 2type/gitbook
 ```
 ## 页面
 
-新建 markdown 文件
+新建 readme.md 文件
 
     ---
-    permalink: /some/
+    permalink: /
     ---
     # 标题 
     
@@ -94,6 +94,13 @@ sidebarBasedOnContent: true
 ## 样式
 
 修改 [./assets/var.css](./assets/var.css?embed) 文件可自定义主题颜色
+
+## 继承主题
+
+你可以仿照 https://github.com/goclub/gitbook 项目,继承 2type/gitbook .
+这样可以统一设置默认[header](https://github.com/goclub/gitbook/blob/main/_includes/HEADER_LINKS.html) 或默认打开 [PageSidebarBasedOnContent](https://github.com/goclub/gitbook/blob/main/_includes/SUMMARY.html)  
+
+随后创建的 `_config.yaml` 只需设置为 `remote_theme: 用户名或组织名/gitbook`
 
 ## 部署jekyll  <a id="publish_jeykyll"></a>
 

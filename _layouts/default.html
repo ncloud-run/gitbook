@@ -53,7 +53,9 @@
     document.getElementById("repository_nwo").innerText = GithubRepoNwo
     window.GithubBranch  = "main"
     window.GithubBranch = "{{ site.github.source.branch }}"
-    window.PageSidebarBasedOnContent = !!"{{page.sidebarBasedOnContent}}"
+    if (window.PageSidebarBasedOnContent === undefined) {
+        window.PageSidebarBasedOnContent = !!"{{page.sidebarBasedOnContent}}"
+    }
 
     if (GithubBranch === "gh-pages") {
         GithubBranch = "main"
